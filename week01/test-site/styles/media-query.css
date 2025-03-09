@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.crdom/rcss2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+header {
+    background-color: #fff;
+    
+}
+header h1 {
+    font-family: "Roboto", sans-serif;
+    color: #717a77;
+    text-align: center;
+}
+nav {
+    display: flex; 
+    justify-content: space-evenly;
+    background-color: #266255;
+
+}
+
+
+
+nav a {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    padding:  10px;
+    height: 20px;
+}
+
+
+main {
+    max-width: 100%;
+    
+}
+
+main {
+    display: grid;
+    grid-gap: .4rem;
+    grid-template-columns: 2fr 1fr ;
+}
+
+
+.card {
+    margin: 6px;
+    padding: 4px;
+    align-self: center;
+    border:  solid;
+    border-radius: 5px;
+    height: 591px;
+}
+
+section {
+    background-color: white;
+    box-shadow: 6px 3px 4px gray;
+    font-family: "Roboto", sans-serif;
+}
+section .box-header{
+    
+    background-color: #266255; 
+    color: white; 
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: #266255;
+    height: 100px;
+    color: white
+}
+
+.me{
+    display:flex;
+    justify-content: center;
+
+}
+
+.me p {
+    margin: 10px;
+    align-self:center;
+    line-height: 1.5;
+
+}
+
+
+
+.me img {
+    display: block;
+    float: right;
+    padding: 5px ;
+    margin: 10px;
+    border: 1px solid ;
+    height: 200px ;
+    width: 150px;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.country img {
+    display: block;
+    float: left;
+    padding: 10px;
+    height: 100px ;
+    width: 150px;
+}
+
+figure { 
+    display: flex;
+    flex-flow: column;
+}
+
+figcaption {
+    text-align: center;
+
+}
+
+footer p {
+    text-align: center;
+}
