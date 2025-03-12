@@ -92,6 +92,7 @@ const courses = [
 ]
 
 
+
 function myFunction() {
     var x = document.getElementById("navegator");
     if (x.style.display === "block") {
@@ -109,3 +110,49 @@ function myFunction() {
         x.style.display = "none"; 
     }
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const filterButtons = document.querySelectorAll(".filter-header button"); 
+    const courseButtons = document.querySelectorAll(".card-button button"); 
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const filter = this.textContent.trim(); 
+
+            courseButtons.forEach(courseButton => {
+                const courseText = courseButton.textContent.replace("✔️ ", "").trim(); 
+                const coursePrefix = courseText.split(" ")[0];
+
+                if (filter === "All" || coursePrefix === filter) {
+                    courseButton.style.display = "block";
+                } else {
+                    courseButton.style.display = "none";
+                }
+            });
+        });
+    });
+
+    insertCheck();
+});
+
+
+
+function insertCheck() {
+
+    let buttons = document.querySelectorAll(".card-button button");
+
+    buttons.forEach((button, index) => {
+        if (courses[index] && courses[index].completed) {
+            if (!button.textContent.startsWith("✔️ ")) { 
+                button.textContent = "✔️ " + button.textContent;
+                button.style.backgroundColor = "#d4edda";
+            }
+            else
+            {
+                button.style.backgroundColor = "yellow";
+            }
+        }
+    });
+}
