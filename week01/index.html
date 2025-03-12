@@ -6,10 +6,11 @@
     <title>Home Page</title>
     <meta name="description" content="Home Page for WDD231 class">
     <meta name="Author"> 
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="test-site/styles/media-query-large.css">
+    
+    
     <link rel="stylesheet" href="test-site/styles/media-query.css"> 
-    <link rel="stylesheet" href="test-site/styles/normalize.css">
+    <link rel="stylesheet" href="test-site/styles/large-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -19,7 +20,8 @@
         <img src="" alt=""> 
         <h1>Welcome to My Website</h1>
        </span> 
-        <nav>
+       <a id="menu" href="#" onclick="myFunction()"></a> 
+       <nav id="navegator">
             <a href="">Home</a>
             <a href="">Chamber</a>
             <a href="">Github Profile</a>
@@ -28,12 +30,11 @@
     </header>
 
     <main>
-       <h1>Home</h1>
-       <section class="card">
+       <h1>Home</h1>    
+       <section class="card1">
             <div class="box-header"><h2>Course Work</h2></div>
-            <div class="me">
                 <ul>
-                    <li></li>
+                    <li>algo</li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -41,25 +42,31 @@
                 </ul>
             </div>
        </section>
-       <section class="card">
+       <section class="card2">
         <div class="box-header"><h2>Villarica, Santiago</h2></div>
         <div>
-            <img src="" alt="">
-            <caption></caption>
+            <figure class="figure">
+                <img src="test-site/images/Villarica.jpg" alt="Villarica Image">
+                <figcaption class="figcaption">Villarica Volcane</figcaption>
+            </figure>
         </div>
         </section> 
-        <section class="card">
+        <section class="card3">
            <div class="box-header"><h2>Web and Computer Programming Certificate</h2></div> 
-            <div><nav>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav></div>
-            <div>
-               <button></button>
-               <button></button><button></button><button></button><button></button><button></button> 
+            <div class="filter-header">
+                <nav>              
+                    <button>All</button>
+                    <button>CSE</button>
+                    <button>WDD</button>
+                </nav>
+            </div>
+            <div class="card-button">
+               <button>CSE 110</button>
+               <button>WDD 130</button>
+               <button>CSE 111</button>
+               <button>CSE 210</button>
+               <button>WDD 131</button>
+               <button>WDD 231</button> 
             </div>
         </section>
     
@@ -67,8 +74,9 @@
 
     <footer>
         <p>©<span id="currentyear"></span> | Rodrigo Pacheco | Chile  </p>
-        <p id="lastModified"></p>
+        <p id="lastModified"><span></span></p>
     </footer>
 
 </body>
 </html>
+<script src="/week01/test-site/scripts/home.js"></script>

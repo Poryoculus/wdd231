@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.crdom/rcss2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 .roboto-thin {
     font-family: "Roboto", sans-serif;
@@ -15,16 +15,20 @@ header h1 {
     color: #717a77;
     text-align: center;
 }
-nav {
+#navegator {
     display: flex; 
     justify-content: space-evenly;
     background-color: #266255;
 
 }
 
+main h1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    text-align: center;
+}
 
-
-nav a {
+#navegator a  {
     display: block;
     padding: 10px;
     margin: 10px;
@@ -33,7 +37,7 @@ nav a {
     font-size: 20px;
 }
 
-nav a:hover {
+#navegator a:hover {
     text-decoration: underline;
     padding:  10px;
     height: 20px;
@@ -42,23 +46,57 @@ nav a:hover {
 
 main {
     max-width: 100%;
-    
-}
-
-main {
     display: grid;
     grid-gap: .4rem;
-    grid-template-columns: 2fr 1fr ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    gap: 10px;
 }
 
-
-.card {
+.card1{
     margin: 6px;
     padding: 4px;
+    align-self: start;
+    border:  solid;
+    border-radius: 5px;
+    height: auto;
+    grid-row: 2;
+}
+.card2{
+    margin: 6px;
+    padding: 4px;
+    align-self: start;
+    border:  solid;
+    border-radius: 5px;
+    height: auto;
+    grid-row: 2;
+}
+
+.card3 {
+    margin: 6px;
+    padding: 4px;
+    display: grid;
     align-self: center;
     border:  solid;
     border-radius: 5px;
-    height: 591px;
+    height: auto;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    min-height: 200px;  
+}
+
+
+.card-button {
+    margin: 6px;
+    padding: 4px;
+    display: grid;
+    align-self: center;
+    border:  solid;
+    border-radius: 5px;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);    
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
 }
 
 section {
@@ -76,50 +114,47 @@ section .box-header{
     
 }
 
+.filter-header{
+    
+    background-color: white;
+    color: white; 
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.filter-header nav {
+
+    display: flex; 
+    justify-content: space-evenly;
+    background-color: white;
+
+}
+
+.filter-header button {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: solid black;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+}
+.filter-header button:hover {
+    color: white;
+    background-color: brown;
+}
+
 footer {
     background-color: #266255;
     height: 100px;
     color: white
 }
 
-.me{
-    display:flex;
-    justify-content: center;
-
-}
-
-.me p {
-    margin: 10px;
-    align-self:center;
-    line-height: 1.5;
-
-}
-
-
-
-.me img {
-    display: block;
-    float: right;
-    padding: 5px ;
-    margin: 10px;
-    border: 1px solid ;
-    height: 200px ;
-    width: 150px;
-}
-
-.country {
-    display: flex;
-    justify-content: center;
-    line-height: 1.5;
-}
-
-.country img {
-    display: block;
-    float: left;
-    padding: 10px;
-    height: 100px ;
-    width: 150px;
-}
 
 figure { 
     display: flex;
@@ -133,4 +168,8 @@ figcaption {
 
 footer p {
     text-align: center;
+}
+
+#menu {
+    display: none
 }
