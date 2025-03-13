@@ -31,8 +31,10 @@ header h1 {
 
 #title-header img {
     margin: 10px;
+    width: 80px; 
+    height: 100px;
 }
-#title-header h1 {
+#title-header span {
     text-align: center;
 }
 
