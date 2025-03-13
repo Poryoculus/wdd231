@@ -20,7 +20,7 @@ header h1 {
     background-color: black;
 
 }
-#title-header span {
+#title-header {
     background-color: #266255;
     display: flex;
     justify-content: space-evenly;
