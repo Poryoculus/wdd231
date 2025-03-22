@@ -40,7 +40,7 @@ header {
 
 .title h2 {
   font-size: 14px;
-  color: gray;
+  color: black;
 }
 
 .title h1, .title h2 {
@@ -64,12 +64,7 @@ header {
   margin-bottom: 5px; 
 }
 
-.listOfOwners{
-  display= flex;
-  text-align: end;
-  margin-right: 20px;
-  margin-top: 20px;
-}
+
 main {
   background-color: var(--background-color);
 }
@@ -79,7 +74,7 @@ main {
   display: inline-block; 
   border: none;
   border-radius: 15px;
-  outlline: none;
+  outline: none;
 }
 
 .circle {
