@@ -6,17 +6,12 @@
   --font-family: "roboto-slab-", serif;
 }
 
-.roboto-slab-<uniquifier > {
-  font-family: "roboto-slab-", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
 
 
 header {
   background-color: var(--primary-color);
   display: grid;
-  grid-template: columns: 1fr 1fr 1fr;
+  grid-template: 1fr 1fr 1fr;
    
 }
 
@@ -103,9 +98,14 @@ footer {
 
 footer div {
   align-items: center;
+  
 }
 
-
+footer img {
+  height: 50px;
+  margin: 30px;
+  margin: 20px; 
+}
 
 @media screen and (max-width: 320px) {
  
