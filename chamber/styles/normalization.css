@@ -6,19 +6,15 @@
   --font-family: "roboto-slab-", serif;
 }
 
-
-
 header {
   background-color: var(--primary-color);
   display: grid;
-  grid-template: 1fr 1fr 1fr;
-   
 }
 
 .title {
-  display:flex;
+  display: flex;
   align-items: center;
-  padding:10px 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   margin-top: 30px;
   margin-left: 20px;
@@ -29,7 +25,7 @@ header {
 }
 
 .title h1 {
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -38,9 +34,10 @@ header {
   color: black;
 }
 
-.title h1, .title h2 {
-  display: block; 
-  line-height: 0.3; 
+.title h1,
+.title h2 {
+  display: block;
+  line-height: 0.3;
 }
 
 .navigation {
@@ -54,11 +51,10 @@ header {
   padding: 9px;
   text-decoration: none;
   color: black;
-  font-size: 14px; 
-  margin-right: 17px; 
-  margin-bottom: 5px; 
+  font-size: 14px;
+  margin-right: 17px;
+  margin-bottom: 5px;
 }
-
 
 main {
   background-color: var(--background-color);
@@ -66,69 +62,62 @@ main {
 
 .theme-toggle-button {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
   border: none;
   border-radius: 15px;
   outline: none;
 }
 
 .circle {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: transform 0.3s;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
 }
 
 #menu {
   display: none;
-
 }
-
 
 footer {
   background-color: var(--primary-color);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
 }
 
 footer div {
   align-items: center;
-  
 }
 
 footer img {
   height: 50px;
   margin: 30px;
-  margin: 20px; 
+  margin: 20px;
 }
 
 @media screen and (max-width: 320px) {
- 
   main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    display:grid; 
+    display: grid;
   }
-  
 
-  
   #menu {
-    display: block; 
+    display: block;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    padding: .5rem .75rem; 
-    
-  } 
+    padding: 0.5rem 0.75rem;
+  }
 
   .title {
     margin-bottom: 7px;
-    margin-left: 5px; 
+    margin-left: 5px;
   }
 
   #menu::before {
@@ -136,16 +125,14 @@ footer img {
   }
 
   #menu.show::before {
-    content: "X"
+    content: "X";
   }
 
   .navigation {
-    display:none;
+    display: none;
   }
 
   footer {
     grid-template-columns: 1fr;
   }
 }
-
-
