@@ -5,7 +5,7 @@
       "address": "101 Maple St, Springfield, USA",
       "phone": "+1234567891",
       "website": "https://alicejohnson.com",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      "image": "images/Google_2015_logo.svg",
       "membership_level": 1,
       "additional_info": {
         "company": "Johnson Consulting",
@@ -17,7 +17,7 @@
       "address": "202 Oak St, Springfield, USA",
       "phone": "+1234567892",
       "website": "https://bobwilliams.com",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      "image": "images/Apple_logo_black.svg",
       "membership_level": 2,
       "additional_info": {
         "company": "Williams Tech",
@@ -29,7 +29,7 @@
       "address": "303 Pine St, Springfield, USA",
       "phone": "+1234567893",
       "website": "https://carolmartinez.com",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+      "image": "images/Microsoft_logo.svg",
       "membership_level": 3,
       "additional_info": {
         "company": "Martinez Design",
@@ -41,7 +41,7 @@
       "address": "404 Birch St, Springfield, USA",
       "phone": "+1234567894",
       "website": "https://davidsmith.com",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Meta_Inc._logo.jpg",
+      "image": "images/Meta_Inc._logo.jpg",
       "membership_level": 1,
       "additional_info": {
         "company": "Smith Marketing",
@@ -53,7 +53,7 @@
       "address": "505 Cedar St, Springfield, USA",
       "phone": "+1234567895",
       "website": "https://evabrown.com",
-      "image": "https://brandemia.org/contenido/subidas/2022/11/logo-amazon-2000-actualidad-1024x576.png",
+      "image": "images/logo-amazon-76.webp",
       "membership_level": 2,
       "additional_info": {
         "company": "Brown Solutions",
@@ -65,7 +65,7 @@
       "address": "606 Walnut St, Springfield, USA",
       "phone": "+1234567896",
       "website": "https://franklee.com",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Adobe_Corporate_logo.svg/2560px-Adobe_Corporate_logo.svg.png",
+      "image": "images/Adobe_Corporate_logo.svg.png",
       "membership_level": 3,
       "additional_info": {
         "company": "Lee Enterprises",
@@ -77,7 +77,7 @@
       "address": "707 Cherry St, Springfield, USA",
       "phone": "+1234567897",
       "website": "https://graceadams.com",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+      "image": "images/IBM_logo.svg",
       "membership_level": 1,
       "additional_info": {
         "company": "Adams Consulting",
