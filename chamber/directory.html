@@ -9,67 +9,61 @@
       name="description"
       content="Page to promote businesses of its members"
     />
-    <link href="../chamber/styles/media-query.css.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../chamber/styles/small-query.css" />
-    <script src="../chamber/scripts/directory.js" defer></script>
+    <link href="styles/normalization.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/media-query.css" />
+    <link rel="stylesheet" href="styles/small-query.css" />
+    <script src="scripts/directory.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Facebook Meta Tags -->
-    <meta name="og:title" content="Timbuktu Chamber of Commerce" />
-    <meta name="og:type" content="website" />
+    <meta property="og:title" content="Timbuktu Chamber of Commerce" />
+    <meta property="og:type" content="website" />
     <meta
-      name="og:img"
+      property="og:image"
       content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tombouctou.jpg/640px-Tombouctou.jpg"
     />
-    <meta name="og:url" content="" />
+    <meta property="og:url" content="" />
   </head>
   <body>
     <header>
-      <img src="" alt="Logo" />
-      <h1>Timbuktu</h1>
-      <a href=""></a>
-      <div class="header">
+      <div class="title">
+        <img src="" alt="Logo" />
+        <div class="text-container">
+          <h1>Timbuktu</h1>
+          <h2>Chamber of Commerce</h2>
+        </div>
+        <a id="menu" href="#" onclick="myFunction()"></a>
+      </div>
+      <div class="navigation">
+        <button id="light" class="theme-toggle-button" type="button"></button>
         <a href="#">Home </a>
         <a href="#">Directory</a>
         <a href="#">Join</a>
         <a href="#">Discover</a>
-        <a href="#">O</a>
       </div>
     </header>
 
-    <body>
-      <img class="hero" src="#" alt="Hero Image" />
-      <h2>algo por aquí</h2>
-      <section>
-        <section class="card1">
-          <div class="box-header"><h2>Events</h2></div>
-          <div></div>
-        </section>
-        <section class="card2">
-          <div class="box-header"><h2>Current Weather</h2></div>
-          <div>
-            <img src="" alt="Weather img" />
-            <h3 id="fahreinheit"></h3>
-            <p id="weather title"></p>
-            <p id="highest">High:</p>
-            <p id="lowest">Low:</p>
-            <p id="humidity">Humidity:</p>
-            <p id="sunrise"></p>
-            <p id="sunset"></p>
-          </div>
-        </section>
-        <section class="card3">
-          <div class="box-header"><h2>Weather Forecast</h2></div>
-          <div></div>
-        </section>
+    <main>
+      <section class="listOfOwners">
+        <div class="selector">
+          <button id="gridButton" type="button">Grid</button>
+          <button id="listButton" type="button">List</button>
+        </div>
+        <div id="cards" class="grid"></div>
       </section>
-      <section class="owners"></section>
-    </body>
+    </main>
     <footer>
-      <div></div>
-      <h3>Tinbuktu Chamber of Commerce</h3>
-      <p>10 Rue de la paix</p>
-      <p>Timbuktu, Mali 999</p>
-      <p>info@timbuktucc.org</p>
-      <p>(223) 555-2300</p>
+      <div>
+        <h3>Timbuktu Chamber of Commerce</h3>
+        <p>10 Rue de la paix</p>
+        <p>Timbuktu, Mali 999</p>
+        <p>info@timbuktucc.org</p>
+        <p>(223) 555-2300</p>
+      </div>
       <div>
         <img src="" alt="Youtube" />
         <img src="" alt="Twitter" />

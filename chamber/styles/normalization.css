@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #f6bd60;
+  --secondary-color: #f7ede2;
+  --background-color: #ffffff;
+  --font-style: #000000;
+  --font-family: "roboto-slab-", serif;
+}
+
+.roboto-slab-<uniquifier > {
+  font-family: "roboto-slab-", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template: columns: 1fr 1fr 1fr;
+   
+}
+
+.title {
+  display:flex;
+  align-items: center;
+  padding:10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.title img {
+  margin-right: 10px;
+}
+
+.title h1 {
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+.title h2 {
+  font-size: 14px;
+  color: gray;
+}
+
+.title h1, .title h2 {
+  display: block; 
+  line-height: 0.3; 
+}
+
+.navigation {
+  display: flex;
+  background-color: var(--primary-color);
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.navigation a {
+  padding: 9px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px; 
+  margin-right: 17px; 
+  margin-bottom: 5px; 
+}
+
+.listOfOwners{
+  display= flex;
+  text-align: end;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+main {
+  background-color: var(--background-color);
+}
+
+.theme-toggle-button {
+  position: relative;
+  display: inline-block; 
+  border: none;
+  border-radius: 15px;
+  outlline: none;
+}
+
+.circle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#menu {
+  display: none;
+
+}
+
+
+footer {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: auto auto;
+}
+
+footer div {
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 320px) {
+ 
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    display:grid; 
+  }
+  
+
+  
+  #menu {
+    display: block; 
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem; 
+    
+  } 
+
+  .title {
+    margin-bottom: 7px;
+    margin-left: 5px; 
+  }
+
+  #menu::before {
+    content: "≡";
+  }
+
+  #menu.show::before {
+    content: "X"
+  }
+
+  .navigation {
+    display:none;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+
