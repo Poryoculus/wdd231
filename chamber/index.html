@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Directory</title>
+    <title>Tokyo Chamber of Commerce</title>
     <meta name="Author" content="Rodrigo Pacheco" />
     <meta
       name="description"
@@ -12,9 +12,9 @@
 
     <link rel="icon" href="../favicon.ico" />
     <link href="styles/normalization.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/directory-media-query.css" />
-    <link rel="stylesheet" href="styles/directory-small-query.css" />
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/home-media-query.css" />
+    <link rel="stylesheet" href="styles/home-small-query.css" />
+    <script src="scripts/home.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Tokyo Chamber of Commerce" />
+    <meta property="og:title" content="Timbuktu Chamber of Commerce" />
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
@@ -38,13 +38,13 @@
       <div class="title">
         <img src="../chamber/images/torre-de-tokio.png" alt="Logo" />
         <div class="text-container">
-          <h1>Tokyo <span>Chamber of Commerce</span></h1>
+          <h1>Tokyo</h1>
+          <h2>Chamber of Commerce</h2>
         </div>
         <a id="menu" href="#" onclick="myFunction()"></a>
       </div>
       <div class="navigation">
-        <button id="light" class="theme-toggle-button" type="button"></button>
-        <a href="index.html">Home </a>
+        <a href="#">Home </a>
         <a href="#">Directory</a>
         <a href="#">Join</a>
         <a href="#">Discover</a>
@@ -52,20 +52,31 @@
     </header>
 
     <main>
-      <section class="listOfOwners">
-        <div class="selector">
-          <button id="gridButton" type="button">Grid</button>
-          <button id="listButton" type="button">List</button>
+      <main>
+        <div class="hero-container">
+          <picture class="hero">
+            <source
+              srcset="../chamber/images/tokyo-small.webp"
+              media="(max-width: 400px)"
+            />
+            <img src="../chamber/images/tokyo2.webp" alt="Tokyo" />
+          </picture>
+          <div>
+            <h1>Tokyo Chamber of Commerce</h1>
+            <p>
+              Welcome to the Tokyo Chamber of Commerce, where we connect
+              businesses and foster growth in our vibrant community.
+            </p>
+          </div>
         </div>
-        <div id="cards" class="grid"></div>
-      </section>
+      </main>
     </main>
     <footer>
       <div>
-        <h3>Tokyo Chamber of Commerce</h3>
+        <h3>Tokyo</h3>
         <p>10 Rue de la paix</p>
-        <p>Tokyo, Mali 999</p>
-        <p>info@Toykoucc.org</p>
+        <p>Timbuktu, Mali 999</p>
+        <p>info@timbuktucc.org</p>
         <p>(223) 555-2300</p>
       </div>
       <div>

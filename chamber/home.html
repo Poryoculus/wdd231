@@ -14,7 +14,7 @@
     <link href="styles/normalization.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/media-query.css" />
     <link rel="stylesheet" href="styles/small-query.css" />
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +36,7 @@
   <body>
     <header>
       <div class="title">
-        <img src="#" alt="Logo" />
+        <img src="../chamber/images/torre-de-tokio.png" alt="Logo" />
         <div class="text-container">
           <h1>Tokyo</h1>
           <h2>Chamber of Commerce</h2>
@@ -44,7 +44,6 @@
         <a id="menu" href="#" onclick="myFunction()"></a>
       </div>
       <div class="navigation">
-        <button id="light" class="theme-toggle-button" type="button"></button>
         <a href="#">Home </a>
         <a href="#">Directory</a>
         <a href="#">Join</a>
@@ -53,16 +52,17 @@
     </header>
 
     <main>
-      <picture>
-        <source
-          media="(min-width: 1024px)"
-          srcset="images/tokyo.jpg"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="images/tokyo-medium.jpg"
-        />
-        <img src="images/tokyo-small.jpg" alt="Tokyo" />
+      <main>
+        <div class="hero-container">
+          <picture class="hero">
+            <source
+              srcset="../chamber/images/tokyo-small.webp"
+              media="(max-width: 400px)"
+            />
+            <img src="../chamber/images/tokyo-large.webp" alt="Tokyo" />
+          </picture>
+        </div>
+      </main>
     </main>
     <footer>
       <div>

@@ -25,7 +25,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   border-radius: 5px;
-  margin: 30px 20px 0 20px;
+  margin: 30px 0px 0 0px;
   background-color: var(--background-color);
 }
 
@@ -50,9 +50,9 @@ header {
 .navigation {
   display: flex;
   width: 100%;
-  background-color: var(--navigation-color);
+  background-color: var(--background-color);
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   border-bottom: solid 1px black;
 }
 
@@ -62,15 +62,13 @@ header {
   text-decoration: none;
   color: var(--font-style);
   font-size: 14px;
-  margin-right: 17px;
-  margin-bottom: 5px;
+  margin: 10px 20px 10px 20px;
   transition: color 0.3s ease;
 }
 
 header,
 footer {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
   box-sizing: border-box;
@@ -109,7 +107,7 @@ main {
 }
 
 a {
-  color: #063600c;
+  color: #063600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
