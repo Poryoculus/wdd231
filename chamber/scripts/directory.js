@@ -72,3 +72,21 @@ function showList() {
   display.classList.add("list");
   display.classList.remove("grid");
 }
+function myFunction() {
+  var x = document.querySelector(".navigation"); // Use querySelector for classes
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+window.addEventListener("resize", function () {
+  var x = document.querySelector(".navigation");
+
+  if (window.innerWidth > 400) {
+    x.style.display = "flex";
+  } else if (!x.style.display || x.style.display === "flex") {
+    x.style.display = "none";
+  }
+});

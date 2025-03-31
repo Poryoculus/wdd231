@@ -7,9 +7,8 @@
 
 .grid section {
   text-align: center;
-  background-color: var(--secondary-color);
-  grid-gap: 5px;
-  border: 1px solid;
+  background-color: #f9c2d1;
+  border: 1px solid #d96ce2;
   border-radius: 20px;
   box-shadow: 10px 5px 5px gray;
 }
@@ -23,37 +22,36 @@
 .selector {
   text-align: center;
   margin-right: 20px;
-  margin-top: 20px;
-  padding: 50px;
+  width: 100%;
+  padding: 10px;
+  border: solid 1px black;
+  background-color: #d96ce2;
+  color: var(--font-style);
 }
 
 .selector button {
-  margin: 0px;
   height: 40px;
   width: 60px;
   font-weight: 700;
   padding: 1rem;
-}
-
-.selector {
-  display: block;
-  background-color: #84a59d;
-  max-width: 100%;
-  margin-bottom: 10px;
+  background-color: #f9c2d1;
+  color: var(--font-style);
+  border: 1px solid #d96ce2;
+  border-radius: 10px;
 }
 
 .list {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  background-color: #fff8f9;
 }
 
 .list section {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  margin: 0;
   padding: 0.25rem;
-  border: solid 1px gray;
+  border: solid 1px #d96ce2;
 }
 
 .list section > * {
@@ -61,14 +59,29 @@
 }
 
 .list section img {
-  display: none; /* smaller viewports only */
+  display: none;
 }
 
 .list section h3 {
   font-size: 1rem;
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "roboto-slab-", serif;
+  color: var(--font-style);
 }
 
 .list section:nth-child(even) {
-  background-color: #bed;
+  background-color: #f9c2d1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+}
+
+.card section {
+  background-color: #f9c2d1;
+  border: 1px solid #d96ce2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
 }
