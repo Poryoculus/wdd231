@@ -36,7 +36,7 @@
   <body>
     <header>
       <div class="title">
-        <img src="../chamber/images/torre-de-tokio.png" alt="Logo" />
+        <img src="images/torre-de-tokio.png" alt="Logo" />
         <div class="text-container">
           <h1>Tokyo</h1>
           <h2>Chamber of Commerce</h2>
@@ -45,31 +45,60 @@
       </div>
       <div class="navigation">
         <a href="#">Home </a>
-        <a href="#">Directory</a>
+        <a href="directory.html">Directory</a>
         <a href="#">Join</a>
         <a href="#">Discover</a>
       </div>
     </header>
 
     <main>
-      <main>
-        <div class="hero-container">
-          <picture class="hero">
-            <source
-              srcset="../chamber/images/tokyo-small.webp"
-              media="(max-width: 400px)"
-            />
-            <img src="../chamber/images/tokyo2.webp" alt="Tokyo" />
-          </picture>
-          <div>
-            <h1>Tokyo Chamber of Commerce</h1>
-            <p>
-              Welcome to the Tokyo Chamber of Commerce, where we connect
-              businesses and foster growth in our vibrant community.
-            </p>
-          </div>
+      <h1 class="first">Tokyo Chamber of Commerce</h1>
+      <div class="hero-container">
+        <picture class="hero">
+          <source srcset="images/tokyo-small.webp" media="(max-width: 400px)" />
+          <img src="images/tokyo2.webp" alt="Tokyo" />
+        </picture>
+        <div class="greeting">
+          <h2>
+            Welcome to the Tokyo Chamber of Commerce, do you have a business
+            that you want to grow?
+          </h2>
         </div>
-      </main>
+        <div class="cta">
+          <button type="button">Join Us!</button>
+        </div>
+      </div>
+      <section class="today">
+        <section class="events">
+          <div class="box-header"><h2>Events</h2></div>
+          <div></div>
+        </section>
+        <section class="cu-weather">
+          <div class="box-header">
+            <h2>Weather</h2>
+          </div>
+
+          <div class="weather-wrapper">
+            <img id="weather-icon" src="" alt="weather icon" />
+            <figcaption></figcaption>
+          </div>
+          <p id="tempe"></p>
+          <p id="wind"></p>
+          <p id="humidity"></p>
+          <p id="higher"></p>
+          <p id="lower"></p>
+        </section>
+        <section class="for-weather">
+          <div class="box-header"><h2>Weather Forecast</h2></div>
+
+          <div>
+            <p id="day1"></p>
+            <p id="day2"></p>
+            <p id="day3"></p>
+          </div>
+        </section>
+      </section>
+      <section class="cards"></section>
     </main>
     <footer>
       <div>

@@ -1,12 +1,144 @@
+
+main 
+  background-color: var(--light-color);
+}
+
+.first {
+  background-color: #5e2b7b;
+  text-align: center;
+  color: #ffd700;
+  border: 1px solid #2c3e50;
+  padding: 1rem;
+  margin: 0;
+}
 .hero-container {
+  position: relative;
   width: 100%;
-  display: block;
-  position: static;
+  margin: auto;
+  max-width: 1500px;
 }
 
 .hero-container img {
   width: 100%;
   height: auto;
+  display: block;
+  border-radius: 10px;
+}
 
-  position: relative;
+.greeting {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  width: 70%;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta button {
+  background-color: #ffd700;
+  color: #5e2b7b;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta button:hover {
+  background-color: #e6c200;
+}
+
+
+.today {
+display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+}
+
+section {
+    background-color: white;
+    box-shadow: 6px 3px 4px gray;
+    font-family: "Roboto", sans-serif;
+    margin: 4px;
+}
+section .box-header{
+    
+    background-color: #266255; 
+    color: white; 
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+
+.today {
+  max-width: 1500px;
+  left: 50%;
+  box-shadow: none;
+  margin: auto;
+  text-align: center;
+}
+
+.events {
+  grid-column: 1/3;
+}
+
+.weather-wrapper img{
+  height: 100px;
+  width: auto;
+}
+
+.weather-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.weather-wrapper span {
+  size: 1.2em;
+  
+}
+
+.for-weather span {
+  font-size: 1.4em;
+  color: #000000;
+  line-height: 1.5;
+  top: 50%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.card section {
+  text-align: center;
+  background-color: #f9c2d1;
+  border: 1px solid #d96ce2;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.cards img {
+
+  width: auto;
+  height: 80px;
+  margin: 25px;
 }

@@ -135,7 +135,7 @@ footer img {
   margin: 20px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -175,5 +175,13 @@ footer img {
   header,
   footer {
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    display: grid;
   }
 }
