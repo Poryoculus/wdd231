@@ -1,11 +1,11 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   greeting {
     font-size: 0.6rem;
     padding: 1px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .hero-container {
     width: 100%;
     margin: auto;
@@ -22,5 +22,35 @@
   .cta button {
     font-size: 1rem;
     padding: 8px 16px;
+  }
+  .today {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .events {
+    grid-column: 2;
+  }
+  .cu-weather {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .for-weather {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(300px, 1fr);
+    width: 100%;
+  }
+
+  .cards section {
+    width: 600px;
+    max-width: 600px;
   }
 }

@@ -7,17 +7,21 @@
   --font-family: "Roboto Slab", serif;
 }
 
+html,
 body {
   margin: 0;
   width: 100%;
   font-family: var(--font-family);
   background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 header {
   background-color: var(--primary-color);
   display: grid;
-  width: 100%;
+  grid-template-columns: 1fr, auto;
 }
 
 .title {
@@ -68,7 +72,6 @@ header {
 
 header,
 footer {
-  width: 100%;
   margin: 0 auto;
   padding: 10px 20px;
   box-sizing: border-box;
@@ -135,7 +138,7 @@ footer img {
   margin: 20px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -178,10 +181,14 @@ footer img {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
   main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     display: grid;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }

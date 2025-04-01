@@ -139,6 +139,7 @@ const displayCards = (Cards, numberofdisplay) => {
     ) {
       const card = document.createElement("section");
       const portrait = document.createElement("img");
+      const textcontainer = document.createElement("div");
       const companyName = document.createElement("h2");
       const address = document.createElement("p");
       const phone = document.createElement("p"); // Renamed from "number" to avoid conflicts
@@ -159,13 +160,15 @@ const displayCards = (Cards, numberofdisplay) => {
       url.setAttribute("target", "_blank");
       url.textContent = "Visit Website";
 
-      // Append elements to card
-      card.appendChild(portrait);
-      card.appendChild(companyName);
-      card.appendChild(address);
-      card.appendChild(phone);
-      card.appendChild(url);
+      textcontainer.appendChild(address);
+      textcontainer.appendChild(phone);
+      textcontainer.appendChild(url);
 
+      // Append elements to card
+
+      card.appendChild(companyName);
+      card.appendChild(portrait);
+      card.appendChild(textcontainer);
       // Append card to container
       bussinessCard.appendChild(card);
 
