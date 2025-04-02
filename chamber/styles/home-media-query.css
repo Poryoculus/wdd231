@@ -122,6 +122,7 @@ section .box-header {
   max-width: 1500px;
   box-shadow: none;
   border: none;
+  margin: auto;
 }
 
 .cards section {
