@@ -130,9 +130,13 @@ async function getBussinessData(file) {
 }
 
 const displayCards = (Cards, numberofdisplay) => {
-  let displayedCards = 0; // Counter for displayed cards
+  let displayedCards = 0;
+  const businessesArray = Object.values(Cards);
 
-  Object.values(Cards).forEach((business) => {
+  // Shuffle the array randomly
+  businessesArray.sort(() => Math.random() - 0.5);
+
+  businessesArray.forEach((business) => {
     if (
       (business.membership_level === 2 || business.membership_level === 3) &&
       displayedCards < numberofdisplay
@@ -142,20 +146,17 @@ const displayCards = (Cards, numberofdisplay) => {
       const textcontainer = document.createElement("div");
       const companyName = document.createElement("h2");
       const address = document.createElement("p");
-      const phone = document.createElement("p"); // Renamed from "number" to avoid conflicts
+      const phone = document.createElement("p");
       const url = document.createElement("a");
 
-      // Set image attributes (with fallback)
       portrait.setAttribute("src", business.image || "default-image.jpg");
       portrait.setAttribute("alt", business.name || "Business Image");
-      portrait.setAttribute("loading", "lazy"); // Performance optimization
+      portrait.setAttribute("loading", "lazy");
 
-      // Set text content with fallbacks
       companyName.textContent = business.additional_info?.company || "No Name";
       address.textContent = business.address || "No Address Available";
       phone.textContent = business.phone || "No Contact Info";
 
-      // Set URL attributes
       url.setAttribute("href", business.website || "#");
       url.setAttribute("target", "_blank");
       url.textContent = "Visit Website";
@@ -164,15 +165,13 @@ const displayCards = (Cards, numberofdisplay) => {
       textcontainer.appendChild(phone);
       textcontainer.appendChild(url);
 
-      // Append elements to card
-
       card.appendChild(companyName);
       card.appendChild(portrait);
       card.appendChild(textcontainer);
-      // Append card to container
+
       bussinessCard.appendChild(card);
 
-      displayedCards++; // Increment displayed count
+      displayedCards++;
     }
   });
 };
