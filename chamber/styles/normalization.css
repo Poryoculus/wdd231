@@ -21,7 +21,7 @@ body {
 header {
   background-color: var(--primary-color);
   display: grid;
-  grid-template-columns: 1fr, auto;
+  grid-template-columns: 1fr auto;
 }
 
 .title {
