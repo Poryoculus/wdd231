@@ -80,7 +80,7 @@ section {
 
 section .box-header {
   background-color: var(--secondary-color);
-  color: white;
+  color: black;
   padding: 10px;
   font-size: 1.2em;
   text-align: center;

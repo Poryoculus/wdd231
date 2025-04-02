@@ -1,10 +1,3 @@
-@media screen and (max-width: 700px) {
-  greeting {
-    font-size: 0.6rem;
-    padding: 1px;
-  }
-}
-
 @media screen and (max-width: 1100px) {
   .hero-container {
     width: 100%;
@@ -52,4 +45,68 @@
     width: 600px;
     max-width: 600px;
   }
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  greeting {
+    font-size: 0.6rem;
+    padding: 1px;
+  }
+  .greeting {
+    font-size: 0.8rem;
+    padding: 5px;
+    top: 40%;
+  }
+  .cta {
+    font-size: 1rem;
+    padding: 8px 16px;
+    top: 70%;
+  }
+  .today {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 360px;
+    
+  }
+
+  .events {
+    grid-column: 2;
+   
+  }
+  .cu-weather {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .for-weather {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .cards {
+    display: grid;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .cards section {
+    width: 360px;
+    max-width: 360px;
+    
+    
+  }
+  footer {
+    text-align: center;
+  }
+body, footer, header {
+  width: auto;
+  height: auto;
+}
+
+
+
 }
