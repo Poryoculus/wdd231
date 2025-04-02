@@ -45,7 +45,6 @@
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(300px, 1fr);
     width: 100%;
   }
 
