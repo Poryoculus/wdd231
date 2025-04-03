@@ -147,7 +147,7 @@ section .box-header {
 }
 
 .cards img {
-  width: auto;
-  height: 100px;
+  width: 150px;
+  height: 120px;
   margin: 25px;
 }
