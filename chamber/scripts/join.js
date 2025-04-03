@@ -1,7 +1,7 @@
 // Membership Level script
 const fileJson = "data/memberships.json";
-const buttons = document.querySelectorAll(".membership-level button");
-const membership = document.querySelector(".membership-info");
+const buttons = document.querySelectorAll(".membership-levels button");
+const membershipDialog = document.querySelector("#membership-info");
 
 // Fetch and store membership data
 let membershipData = [];
@@ -9,31 +9,30 @@ const getMembershipData = async (file) => {
   try {
     const response = await fetch(file);
     membershipData = (await response.json()).modal.memberships;
-    console.log(membershipData);
   } catch (error) {
     console.error("Error fetching membership data:", error);
   }
 };
 
 // Function to display membership details in a modal
-const displayMembershipData = (membershipinfo) => {
-  membership.innerHTML = `
+const displayMembershipData = (membershipInfo) => {
+  membershipDialog.innerHTML = `
     <button class="close">X</button>
-    <h2>${membershipinfo.name}</h2>
-    <p>${membershipinfo.description}</p>
+    <h2>${membershipInfo.name}</h2>
+    <p>${membershipInfo.description}</p>
     <p><strong>Benefits:</strong></p>
     <ul>
-      ${membershipinfo.features.map((benefit) => `<li>${benefit}</li>`).join("")}
+      ${membershipInfo.features.map((benefit) => `<li>${benefit}</li>`).join("")}
     </ul>
   `;
 
   // Close button functionality
-  membership.querySelector(".close").addEventListener("click", () => {
-    membership.close();
+  membershipDialog.querySelector(".close").addEventListener("click", () => {
+    membershipDialog.close();
   });
 
   // Show the modal
-  membership.showModal();
+  membershipDialog.showModal();
 };
 
 // Attach event listeners to membership buttons
