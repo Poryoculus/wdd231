@@ -18,7 +18,7 @@ const lon = 139.6917;
 
 // API URLs for current weather and forecast\const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
 /**
@@ -81,7 +81,8 @@ function displayForecast(data) {
 
   forecastList.slice(0, 3).forEach((item, index) => {
     let displayDay = index === 0 ? "Today" : item.dayName;
-    forecastDays[index].innerHTML = `<span>${displayDay}: ${item.temp}°C</span>`;
+    forecastDays[index].innerHTML =
+      `<span>${displayDay}: ${item.temp}°C</span>`;
   });
 }
 
@@ -107,7 +108,7 @@ function myFunction() {
 // Adjust navigation display on window resize
 window.addEventListener("resize", function () {
   var x = document.querySelector(".navigation");
-  x.style.display = window.innerWidth > 400 ? "flex" : "none";
+  x.style.display = window.innerWidth > 600 ? "flex" : "none";
 });
 
 // Business cards script
@@ -141,7 +142,10 @@ const displayCards = (Cards, numberOfDisplay) => {
   businessesArray.sort(() => Math.random() - 0.5);
 
   businessesArray.forEach((business) => {
-    if ((business.membership_level === 2 || business.membership_level === 3) && displayedCards < numberOfDisplay) {
+    if (
+      (business.membership_level === 2 || business.membership_level === 3) &&
+      displayedCards < numberOfDisplay
+    ) {
       const card = document.createElement("section");
       const portrait = document.createElement("img");
       const textContainer = document.createElement("div");
@@ -176,3 +180,4 @@ const displayCards = (Cards, numberOfDisplay) => {
 
 // Load business data
 getBusinessData(fileJson);
+

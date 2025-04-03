@@ -19,7 +19,6 @@ body {
 
 header {
   background-color: var(--primary-color);
-  
 }
 
 .title {
@@ -108,13 +107,13 @@ main {
 }
 
 a {
-  color: #00008B;
+  color: #00008b;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #005500; 
+  color: #005500;
 }
 
 footer {
@@ -137,8 +136,6 @@ footer img {
 }
 
 @media screen and (max-width: 700px) {
-    
-  
   main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

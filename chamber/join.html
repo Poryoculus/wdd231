@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chamber of Commerce Home Page</title>
     <meta name="author" content="Rodrigo Pacheco" />
@@ -12,9 +12,9 @@
 
     <link rel="icon" href="../favicon.ico" />
     <link href="styles/normalization.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/home-media-query.css" />
-    <link rel="stylesheet" href="styles/home-small-query.css" />
-    <script src="scripts/home.js" defer></script>
+    <link rel="stylesheet" href="styles/join-media-query.css" />
+    <link rel="stylesheet" href="styles/join-small-query.css" />
+    <script src="scripts/join.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +23,7 @@
     />
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="Tokyo Chamber of Commerce" />
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <meta
       property="og:image"
       content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tombouctou.jpg/640px-Tombouctou.jpg"
@@ -33,27 +33,155 @@
       content="https://poryoculus.github.io/wdd231/chamber/directory.html"
     />
   </head>
+
   <body>
     <header>
       <div class="title">
         <img src="images/torre-de-tokio.webp" alt="Logo" />
         <div class="text-container">
-          <h1>Tokyo</h1>
-          <h2>Chamber of Commerce</h2>
+          <span class="main-title">Tokyo</span>
+          <span class="sub-title">Chamber of Commerce</span>
         </div>
         <a id="menu" href="#" aria-label="Open menu" onclick="myFunction()"></a>
       </div>
       <div class="navigation">
         <a href="#">Home </a>
         <a href="directory.html">Directory</a>
-        <a href="#">Join</a>
+        <a href="join.html">Join</a>
         <a href="#">Discover</a>
       </div>
     </header>
-
     <main>
-      <h1 class="first">Home Page</h1>
-      
+      <h1>Join Page</h1>
+      <h2>Join the Chamber</h2>
+      <form action="" method="get" class="form-example">
+        <label for="first-name">
+          First Name:
+          <input
+            type="text"
+            id="first-name"
+            name="first_name"
+            required
+            title="Enter your first name"
+            autocomplete="given-name"
+          />
+        </label>
+
+        <label for="last-name">
+          Last Name:
+          <input
+            type="text"
+            id="last-name"
+            name="last_name"
+            required
+            title="Enter your last name"
+            autocomplete="family-name"
+          />
+        </label>
+
+        <label for="organization-title">
+          Organizational Title:
+          <input
+            type="text"
+            id="organization-title"
+            name="organization_title"
+            required
+            title="Enter your title (e.g., Manager, Director)"
+            autocomplete="organization-title"
+            pattern="^[A-Za-z\s-]{7,}$"
+          />
+        </label>
+
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            title="Enter a valid email address"
+            autocomplete="email"
+            placeholder="example@domain.com"
+          />
+        </label>
+
+        <label for="phone">
+          Mobile Phone Number:
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            title="Enter your mobile phone number"
+            autocomplete="tel"
+          />
+        </label>
+
+        <label for="organization">
+          Business/Organization Name:
+          <input
+            type="text"
+            id="organization"
+            name="organization"
+            required
+            title="Enter your organization's name"
+            autocomplete="organization"
+          />
+        </label>
+
+        <label for="membership-level">
+          Membership Level:
+          <select
+            id="membership-level"
+            name="membership_level"
+            required
+            title="Select a membership level"
+          >
+            <option value="" disabled selected>
+              Select a membership level
+            </option>
+            <option value="np">NP Membership (Non-Profit, No Fee)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label for="description">
+          Business/Organization Description:
+          <textarea
+            id="description"
+            name="description"
+            required
+            title="Describe your business or organization"
+          ></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+        <button id="join" type="submit">Join</button>
+      </form>
+
+      <section class="membership-levels">
+        <div id="np">
+          <h2>Non-Profit Membership</h2>
+          <button type="">Learn More</button>
+        </div>
+        <div id="bronze">
+          <h2>Bronze Membership</h2>
+          <button type="">Learn More</button>
+        </div>
+        <div id="silver">
+          <h2>Silver Membership</h2>
+          <button type="">Learn More</button>
+        </div>
+        <div id="gold">
+          <h2>Gold Membership</h2>
+          <button type="">Learn More</button>
+        </div>
+
+        <dialog id="membership-info"></dialog>
+      </section>
     </main>
     <footer>
       <div>

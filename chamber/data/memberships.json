@@ -1,0 +1,44 @@
+{
+  "modal": {
+    "title": "Choose Your Membership",
+    "description": "Select the membership that best suits your needs.",
+    "memberships": [
+      {
+        "name": "NP Membership",
+        "description": "For non-profit organizations. No fee required.",
+        "fee": 0,
+        "features": ["Access to basic resources", "Community support"]
+      },
+      {
+        "name": "Bronze Membership",
+        "description": "Basic membership with essential features.",
+        "fee": 10,
+        "features": ["Access to basic resources", "Email support"]
+      },
+      {
+        "name": "Silver Membership",
+        "description": "Enhanced membership with additional benefits.",
+        "fee": 25,
+        "features": [
+          "All Bronze features",
+          "Priority support",
+          "Exclusive content"
+        ]
+      },
+      {
+        "name": "Gold Membership",
+        "description": "Premium membership with full benefits.",
+        "fee": 50,
+        "features": [
+          "All Silver features",
+          "One-on-one consultations",
+          "Early access to new features"
+        ]
+      }
+    ],
+    "buttons": {
+      "confirm": "Select Membership",
+      "cancel": "Cancel"
+    }
+  }
+}
