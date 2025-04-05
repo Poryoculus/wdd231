@@ -83,3 +83,15 @@ h1 {
 #gold {
   background-color: #ffd700;
 }
+
+.form-information section{
+  text-align: left;
+  background-color: var(--light-color);
+  border: 1px solid #d96ce2;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px gray;
+  align-items: center;
+  padding: 10px;
+  max-width: 1100px;
+  width: auto;
+}
