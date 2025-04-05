@@ -46,6 +46,10 @@ h1 {
   border: 1px solid black;
   margin: 10px auto;
   border-radius: 5px;
+
+  animation-name: fade-in;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
 }
 
 .membership-levels button {
@@ -53,6 +57,19 @@ h1 {
   height: 25px;
   margin: 10px auto;
   border-radius: 5px;
+}
+
+.membership-levels button:hover {
+  background-color: gray;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #bronze {
