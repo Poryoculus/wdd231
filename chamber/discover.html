@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Directory</title>
+    <title>Chamber of Commerce Home Page</title>
     <meta name="author" content="Rodrigo Pacheco" />
     <meta
       name="description"
@@ -12,9 +12,9 @@
 
     <link rel="icon" href="../favicon.ico" />
     <link href="styles/normalization.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/directory-media-query.css" />
-    <link rel="stylesheet" href="styles/directory-small-query.css" />
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/discover-media-query.css" />
+    <link rel="stylesheet" href="styles/discover-small-query.css" />
+    <script src="scripts/discover.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,27 +33,28 @@
       content="https://poryoculus.github.io/wdd231/chamber/directory.html"
     />
   </head>
+
   <body>
     <header>
       <div class="title">
         <img src="images/torre-de-tokio.webp" alt="Logo" />
         <div class="text-container">
-          <h1>Tokyo <span>Chamber of Commerce</span></h1>
+          <span class="main-title">Tokyo</span>
+          <span class="sub-title">Chamber of Commerce</span>
         </div>
-        <a id="menu" href="#" onclick="myFunction()"></a>
+        <a id="menu" href="#" aria-label="Open menu" onclick="myFunction()"></a>
       </div>
       <div class="navigation">
         <a href="index.html">Home </a>
         <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
-        <a href="discover.html">Discover</a>
+        <a href="#">Discover</a>
       </div>
-    </header 
-
+    </header>
     <main>
-    <section>
-        <div id="cards" class="grid"></div>
-      </section>
+      <h1>Discover Page</h1>
+      <h3 id="message"></h3>
+      <div id="cards" class="cards"></div>
     </main>
     <footer>
       <div>
@@ -64,9 +65,15 @@
         <p>(223) 555-2300</p>
       </div>
       <div>
-        <img src="images/youtube.png" alt="Youtube" />
-        <img src="images/twitter_copy.png" alt="Twitter" />
-        <img src="images/linkedin.png" alt="Linkedin" />
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="images/youtube.png" alt="Youtube" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="images/twitter_copy.png" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="images/linkedin.png" alt="Linkedin" />
+        </a>
       </div>
 
       <div>

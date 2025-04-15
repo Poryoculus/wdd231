@@ -1,0 +1,22 @@
+@media screen and (max-width: 640px) {
+  .cards {
+    display: grid;
+    align-items: center;
+    width: auto;
+  }
+
+  .card {
+    margin: 0 auto;
+    padding: 0 10px;
+    grid-template-areas:
+      "companyName companyName"
+      "portrait portrait"
+      "description description"
+      "address address";
+    width: auto;
+  }
+  .companyName {
+    font-size: 1.5rem;
+    text-align: start;
+  }
+}

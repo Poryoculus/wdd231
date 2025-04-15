@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Shibuya Crossing",
+    "address": "2 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
+    "description": "Often referred to as the world's busiest pedestrian crossing, Shibuya Crossing is a symbol of Tokyo's vibrant energy. It sees thousands of people crossing from all directions simultaneously, surrounded by massive video screens and neon advertisements.",
+    "location": "images/tokyo/shibuya.webp"
+  },
+  {
+    "name": "Meiji Shrine (Meiji Jingu)",
+    "address": "1-1 Kamizono-chō, Yoyogi, Shibuya-ku, Tokyo 151-0053, Japan",
+    "description": "Nestled within a lush forest in the heart of Tokyo, Meiji Shrine is dedicated to Emperor Meiji and Empress Shōken. It offers a serene escape from the city's hustle with traditional Shinto architecture and tranquil paths.",
+    "location": "images/tokyo/meiji-jingu.webp"
+  },
+  {
+    "name": "Tsukiji Outer Market",
+    "address": "4 Chome-16-2 Tsukiji, Chuo City, Tokyo 104-0045, Japan",
+    "description": "A bustling hub for fresh seafood, produce, and street food. Visitors can enjoy sushi, grilled seafood, and traditional Japanese snacks in this food paradise.",
+    "location": "images/tokyo/tsukiji-outer-market.webp"
+  },
+  {
+    "name": "Akihabara",
+    "address": "Sotokanda, Chiyoda City, Tokyo 101-0021, Japan",
+    "description": "Known as Tokyo's 'Electric Town,' Akihabara is packed with electronics shops, gaming arcades, anime and manga stores, and themed cafés—a haven for tech and anime lovers.",
+    "location": "images/tokyo/akihabara.webp"
+  },
+  {
+    "name": "teamLab Planets TOKYO",
+    "address": "6 Chome-1-16 Toyosu, Koto City, Tokyo 135-0061, Japan",
+    "description": "An immersive digital art museum where visitors walk through water and interact with massive digital installations that blend art, technology, and nature.",
+    "location": "images/tokyo/teamlab-planets-tokyo.webp"
+  },
+  {
+    "name": "Asakusa & Sensō-ji Temple",
+    "address": "2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan",
+    "description": "Home to Tokyo's oldest Buddhist temple. The surrounding Asakusa area offers historic charm with traditional shops and local street food.",
+    "location": "images/tokyo/sensoji-temple.webp"
+  },
+  {
+    "name": "Odaiba",
+    "address": "Daiba, Minato City, Tokyo 135-0091, Japan",
+    "description": "A futuristic man-made island featuring shopping malls, entertainment complexes, a life-sized Gundam statue, and beautiful views of Tokyo Bay.",
+    "location": "images/tokyo/odaiba.webp"
+  },
+  {
+    "name": "Tokyo Skytree",
+    "address": "1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan",
+    "description": "The tallest structure in Japan with panoramic city views from observation decks, plus shopping, dining, and an aquarium.",
+    "location": "images/tokyo/tokyo-skytree.webp"
+  }
+]

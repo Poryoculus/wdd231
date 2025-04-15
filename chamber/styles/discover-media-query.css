@@ -1,0 +1,91 @@
+h1 {
+  display: grid;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+#message {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin: 0 auto;
+  grid-gap: 5px;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  max-width: 1600px;
+}
+
+.card {
+  display: grid;
+  width: auto;
+  grid-template-areas:
+    "companyName companyName"
+    "portrait description"
+    "portrait address";
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 1rem;
+  max-width: 1000px;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  align-items: start;
+}
+
+.companyName {
+  grid-area: companyName;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.portrait {
+  grid-area: portrait;
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  align-self: start;
+}
+
+.description {
+  grid-area: description;
+}
+
+.address {
+  grid-area: address;
+  font-style: italic;
+  color: #555;
+}
+
+.learnMore {
+  justify-self: start;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  grid-column: 1 / span 2;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+  }
+
+  .cards section {
+    width: 90%;
+    max-width: 900px;
+  }
+}
