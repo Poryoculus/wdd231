@@ -1,38 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Directory</title>
-    <meta name="author" content="Rodrigo Pacheco" />
-    <meta
-      name="description"
-      content="Page to promote businesses of its members"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Directory</title>
+  <meta name="author" content="Rodrigo Pacheco" />
+  <meta name="description" content="Page to promote businesses of its members" />
 
-    <link rel="icon" href="../favicon.ico" />
-    <link href="styles/normalization.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/directory-media-query.css" />
-    <link rel="stylesheet" href="styles/directory-small-query.css" />
-    <script src="scripts/directory.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Tokyo Chamber of Commerce" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tombouctou.jpg/640px-Tombouctou.jpg"
-    />
-    <meta
-      property="og:url"
-      content="https://poryoculus.github.io/wdd231/chamber/directory.html"
-    />
-  </head>
+  <link rel="icon" href="../favicon.ico" />
+
+  <!-- Critical CSS -->
+  <link href="styles/normalization.css" rel="stylesheet" />
+
+  <!-- Non-critical CSS: loaded async -->
+  <link rel="preload" href="styles/directory-media-query.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles/directory-media-query.css"></noscript>
+
+  <link rel="preload" href="styles/directory-small-query.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles/directory-small-query.css"></noscript>
+
+  <!-- Google Fonts optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+  <!-- JavaScript defer -->
+  <script src="scripts/directory.js" defer></script>
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:title" content="Tokyo Chamber of Commerce" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tombouctou.jpg/640px-Tombouctou.jpg" />
+  <meta property="og:url" content="https://poryoculus.github.io/wdd231/chamber/directory.html" />
+</head>
   <body>
     <header>
       <div class="title">

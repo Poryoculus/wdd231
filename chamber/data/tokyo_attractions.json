@@ -1,9 +1,9 @@
 [
   {
-    "name": "Shibuya Crossing",
-    "address": "2 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
-    "description": "Often referred to as the world's busiest pedestrian crossing, Shibuya Crossing is a symbol of Tokyo's vibrant energy. It sees thousands of people crossing from all directions simultaneously, surrounded by massive video screens and neon advertisements.",
-    "location": "images/tokyo/shibuya.webp"
+      "name": "Akihabara",
+      "address": "Sotokanda, Chiyoda City, Tokyo 101-0021, Japan",
+      "description": "Known as Tokyo's 'Electric Town,' Akihabara is packed with electronics shops, gaming arcades, anime and manga stores, and themed cafés—a haven for tech and anime lovers.",
+      "location": "images/tokyo/akihabara.webp"
   },
   {
     "name": "Meiji Shrine (Meiji Jingu)",
@@ -18,10 +18,11 @@
     "location": "images/tokyo/tsukiji-outer-market.webp"
   },
   {
-    "name": "Akihabara",
-    "address": "Sotokanda, Chiyoda City, Tokyo 101-0021, Japan",
-    "description": "Known as Tokyo's 'Electric Town,' Akihabara is packed with electronics shops, gaming arcades, anime and manga stores, and themed cafés—a haven for tech and anime lovers.",
-    "location": "images/tokyo/akihabara.webp"
+    
+    "name": "Shibuya Crossing",
+    "address": "2 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
+    "description": "Often referred to as the world's busiest pedestrian crossing, Shibuya Crossing is a symbol of Tokyo's vibrant energy. It sees thousands of people crossing from all directions simultaneously, surrounded by massive video screens and neon advertisements.",
+    "location": "images/tokyo/shibuya.webp"
   },
   {
     "name": "teamLab Planets TOKYO",

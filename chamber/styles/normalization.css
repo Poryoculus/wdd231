@@ -4,7 +4,7 @@
   --background-color: #fff8f9;
   --font-style: #000000;
   --navigation-color: #ffffff;
-  --font-family: "Roboto Slab", serif;
+  --font-family: "Tinos", serif;
 }
 
 html,
@@ -17,6 +17,23 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+ul,
+ol,
+blockquote,
+pre,
+code {
+  font-family: var(--font-family);
+}
 header {
   background-color: var(--primary-color);
 }
@@ -32,6 +49,7 @@ header {
 
 .title img {
   height: 100px;
+  width: 100px;
   margin-right: 10px;
 }
 
@@ -132,6 +150,7 @@ footer div {
 
 footer img {
   height: 50px;
+  width: 50px;
   margin: 20px;
 }
 
