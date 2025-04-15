@@ -40,12 +40,13 @@ h1 {
     transform 0.3s ease,
     box-shadow 0.3s ease,
     background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-  background-color: #f9f9f9; 
-  transform: translateY(-5px); 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  background-color: #f9f9f9;
+  transform: scale(1.02);
+}
 
 .companyName {
   grid-area: companyName;
