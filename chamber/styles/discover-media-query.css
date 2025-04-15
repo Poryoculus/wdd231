@@ -36,7 +36,16 @@ h1 {
   border: 1px solid #eaeaea;
   background-color: #fff;
   align-items: start;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
+
+.card:hover {
+  background-color: #f9f9f9; 
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 
 .companyName {
   grid-area: companyName;
