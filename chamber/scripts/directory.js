@@ -72,21 +72,14 @@ function showList() {
   display.classList.add("list");
   display.classList.remove("grid");
 }
+// Hamburger menu script for responsive navigation
 function myFunction() {
-  var x = document.querySelector(".navigation"); // Use querySelector for classes
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+  var x = document.querySelector(".navigation nav");
+  x.style.display = x.style.display === "block" ? "none" : "block";
 }
 
+// Adjust navigation display on window resize
 window.addEventListener("resize", function () {
-  var x = document.querySelector(".navigation");
-
-  if (window.innerWidth > 400) {
-    x.style.display = "flex";
-  } else if (!x.style.display || x.style.display === "flex") {
-    x.style.display = "none";
-  }
+  var x = document.querySelector(".navigation nav");
+  x.style.display = window.innerWidth > 600 ? "flex" : "none";
 });

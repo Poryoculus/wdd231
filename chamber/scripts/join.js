@@ -57,12 +57,12 @@ lastModified.textContent = `${new Date(document.lastModified)}`;
 
 // Hamburger menu script for responsive navigation
 function myFunction() {
-  var x = document.querySelector(".navigation");
+  var x = document.querySelector(".navigation nav");
   x.style.display = x.style.display === "block" ? "none" : "block";
 }
 
 // Adjust navigation display on window resize
 window.addEventListener("resize", function () {
-  var x = document.querySelector(".navigation");
+  var x = document.querySelector(".navigation nav");
   x.style.display = window.innerWidth > 600 ? "flex" : "none";
 });
