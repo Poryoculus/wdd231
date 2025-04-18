@@ -1,32 +1,32 @@
-// Variables for weather elements
-const temp = document.querySelector("#tempe");
-const caption = document.querySelector("figcaption");
-const icon = document.querySelector("#weather-icon");
-const wind = document.querySelector("#wind");
-const humidity = document.querySelector("#humidity");
-const higher = document.querySelector("#higher");
-const lower = document.querySelector("#lower");
+// variables for weather elements
+const temp = document.queryselector("#tempe");
+const caption = document.queryselector("figcaption");
+const icon = document.queryselector("#weather-icon");
+const wind = document.queryselector("#wind");
+const humidity = document.queryselector("#humidity");
+const higher = document.queryselector("#higher");
+const lower = document.queryselector("#lower");
 
-// Variables for forecast days\const day1 = document.querySelector("#day1");
-const day2 = document.querySelector("#day2");
-const day3 = document.querySelector("#day3");
+// variables for forecast days\const day1 = document.queryselector("#day1");
+const day2 = document.queryselector("#day2");
+const day3 = document.queryselector("#day3");
 
-// API details
-const apiKey = "4d58ab707da67410e7e026e5699ab1e3"; // Replace with your actual key
+// api details
+const apikey = "4d58ab707da67410e7e026e5699ab1e3"; // replace with your actual key
 const lat = 35.6895;
 const lon = 139.6917;
 
-// API URLs for current weather and forecast\const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+// api urls for current weather and forecast\const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apikey}`;
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}`;
+const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apikey}`;
 
 /**
- * Fetch data from an API and execute a callback function.
- * @param {string} url - The API endpoint.
- * @param {Function} callback - The function to process the retrieved data.
+ * fetch data from an api and execute a callback function.
+ * @param {string} url - the api endpoint.
+ * @param {function} callback - the function to process the retrieved data.
  */
-async function apiFetch(url, callback) {
+async function apifetch(url, callback) {
   try {
     const response = await fetch(url);
     if (response.ok) {
@@ -34,30 +34,30 @@ async function apiFetch(url, callback) {
       console.log(data);
       callback(data);
     } else {
-      throw new Error(await response.text());
+      throw new error(await response.text());
     }
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.error("error fetching data:", error);
   }
 }
 
 /**
- * Display current weather information.
- * @param {Object} data - Weather data from API.
+ * display current weather information.
+ * @param {object} data - weather data from api.
  */
-function displayResults(data) {
-  temp.innerHTML = `<span>${Math.round(data.main.temp)}°C</span>`;
-  humidity.innerHTML = `<span>Humidity: ${data.main.humidity}%</span>`;
-  higher.innerHTML = `<span>Higher: ${Math.round(data.main.temp_max)}°C </span>`;
-  lower.innerHTML = `<span>Lower: ${Math.round(data.main.temp_min)}°C </span>`;
+function displayresults(data) {
+  temp.innerhtml = `<span>${math.round(data.main.temp)}°c</span>`;
+  humidity.innerhtml = `<span>humidity: ${data.main.humidity}%</span>`;
+  higher.innerhtml = `<span>higher: ${math.round(data.main.temp_max)}°c </span>`;
+  lower.innerhtml = `<span>lower: ${math.round(data.main.temp_min)}°c </span>`;
 
-  const iconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  const iconurl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let condition = data.weather[0].description;
 
-  icon.setAttribute("src", iconUrl);
-  icon.setAttribute("alt", condition);
-  caption.innerHTML = `<span>${condition}</span>`;
-  wind.innerHTML = `<span>${data.wind.speed} km/h</span>`;
+  icon.setattribute("src", iconurl);
+  icon.setattribute("alt", condition);
+  caption.innerhtml = `<span>${condition}</span>`;
+  wind.innerhtml = `<span>${data.wind.speed} km/h</span>`;
 }
 
 /**
