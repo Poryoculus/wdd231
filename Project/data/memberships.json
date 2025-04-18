@@ -1,0 +1,44 @@
+{
+  "modal": {
+    "title": "Choose Your Membership",
+    "description": "Select the membership that best suits your crafting journey.",
+    "memberships": [
+      {
+        "name": "Bronze Membership",
+        "description": "Perfect for beginners exploring handcrafts.",
+        "fee": 10,
+        "features": [
+          "Access to basic tutorial videos",
+          "One class per month",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Silver Membership",
+        "description": "Ideal for crafters who want to go deeper.",
+        "fee": 25,
+        "features": [
+          "All Bronze features",
+          "Access to all video tutorials",
+          "Two classes per month",
+          "Priority support"
+        ]
+      },
+      {
+        "name": "Gold Membership",
+        "description": "For dedicated creators with full access to everything.",
+        "fee": 50,
+        "features": [
+          "All Silver features",
+          "Unlimited class access",
+          "Exclusive advanced project videos",
+          "One-on-one Q&A with the instructor"
+        ]
+      }
+    ],
+    "buttons": {
+      "confirm": "Select Membership",
+      "cancel": "Cancel"
+    }
+  }
+}

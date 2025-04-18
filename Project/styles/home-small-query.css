@@ -1,0 +1,57 @@
+@media screen and (max-width: 1100px) {
+  .hero-container {
+    width: 100%;
+    margin: auto;
+  }
+  .hero-container img {
+    width: 100%;
+    height: auto;
+  }
+  .greeting {
+    font-size: 0.8rem;
+    padding: 5px;
+    top: 30%;
+  }
+  .cta button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  greeting {
+    font-size: 0.6rem;
+    padding: 1px;
+  }
+  .greeting {
+    font-size: 0.8rem;
+    padding: 5px;
+    top: 40%;
+  }
+  .cta {
+    font-size: 1rem;
+    padding: 8px 16px;
+    top: 70%;
+  }
+  section {
+    max-width: 100%;
+  }
+
+  section img {
+    left: 50%;
+  }
+
+  footer div {
+    text-align: center;
+  }
+  body,
+  footer,
+  header {
+    width: auto;
+    height: auto;
+  }
+}
+

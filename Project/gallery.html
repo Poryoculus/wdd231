@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery</title>
+    <meta name="author" content="Rodrigo Pacheco" />
+    <meta
+      name="description"
+      content="Agaromi is a business that specialize in teaching the handcraft like macrame, crochet and knitting. We have a wide variety of products and classes to offer."
+    />
+
+    <link href="styles/normalization.css" rel="stylesheet" />
+
+    <link href="styles/gallery-media.css" rel="stylesheet" />
+
+    <link href="styles/gallery-small.css" rel="stylesheet" />
+    <!-- Google Fonts optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript defer -->
+    <script src="scripts/gallery.js" defer></script>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Tokyo Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tombouctou.jpg/640px-Tombouctou.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://poryoculus.github.io/wdd231/chamber/directory.html"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img src="images/logo.webp" alt="Logo" />
+        <div class="text-container">
+          <span id="main-title">Agaromi</span>
+          <span id="sub-title">tu casa en mi casa</span>
+        </div>
+        <a id="menu" href="#" aria-label="Open menu" onclick="myFunction()"></a>
+      </div>
+      <div class="navigation">
+        <nav>
+          <a href="index.html">Home </a>
+          <a href="gallery.html">Gallery</a>
+          <a href="form.html">Work with me</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Gallery</h1>
+        <div id="filter-header">
+          <nav id="filters">
+            <button>All</button>
+            <button>Macrame</button>
+            <button>Resina</button>
+            <button>Tejido</button>
+          </nav>
+        </div>
+        <div id="pictures" class="grid"></div>
+      </section>
+    </main>
+    <footer>
+      <div id="address">
+        <h3>Agaromi</h3>
+        <p>Las condes, Santiago</p>
+        <p>(+56) 9 7772 1778</p>
+      </div>
+      <div id="social">
+        <img src="images/youtube.png" alt="Youtube" />
+        <img src="images/twitter_copy.png" alt="Twitter" />
+        <img src="images/linkedin.png" alt="Linkedin" />
+      </div>
+
+      <div id="creation">
+        <p>Creado por Rodrigo Pacheco</p>
+        <p>©<span id="currentYear"></span></p>
+        <p id="lastModification"></p>
+      </div>
+    </footer>
+  </body>
+</html>

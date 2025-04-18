@@ -1,0 +1,82 @@
+{
+  "1": {
+    "name": "Macrame 1",
+    "location": "images/macrame1.webp",
+    "category": "Macrame"
+  },
+  "2": {
+    "name": "Macrame 2",
+    "location": "images/macrame2.webp",
+    "category": "Macrame"
+  },
+  "3": {
+    "name": "Macrame 3",
+    "location": "images/macrame3.webp",
+    "category": "Macrame"
+  },
+  "4": {
+    "name": "Macrame 4",
+    "location": "images/macrame4.jpeg",
+    "category": "Macrame"
+  },
+  "5": {
+    "name": "Macrame 5",
+    "location": "images/macrame5.webp",
+    "category": "Macrame"
+  },
+  "6": {
+    "name": "Macrame 6",
+    "location": "images/macrame6.webp",
+    "category": "Macrame"
+  },
+  "7": {
+    "name": "Resina 1",
+    "location": "images/resina1.webp",
+    "category": "Resina"
+  },
+  "8": {
+    "name": "Resina 2",
+    "location": "images/resina2.webp",
+    "category": "Resina"
+  },
+  "9": {
+    "name": "Resina 3",
+    "location": "images/resina3.webp",
+    "category": "Resina"
+  },
+  "10": {
+    "name": "Resina 4",
+    "location": "images/resina4.webp",
+    "category": "Resina"
+  },
+  "11": {
+    "name": "Resina 5",
+    "location": "images/resina5.webp",
+    "category": "Resina"
+  },
+  "12": {
+    "name": "Tejido 1",
+    "location": "images/tejido1.webp",
+    "category": "Tejido"
+  },
+  "13": {
+    "name": "Tejido 2",
+    "location": "images/tejido2.webp",
+    "category": "Tejido"
+  },
+  "14": {
+    "name": "Tejido 4",
+    "location": "images/tejido4.webp",
+    "category": "Tejido"
+  },
+  "15": {
+    "name": "Tejido 5",
+    "location": "images/tejido5.webp",
+    "category": "Tejido"
+  },
+  "16": {
+    "name": "Tejido 6",
+    "location": "images/tejido6.webp",
+    "category": "Tejido"
+  }
+}

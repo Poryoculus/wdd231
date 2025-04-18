@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work with me</title>
+    <meta name="author" content="Rodrigo Pacheco" />
+    <meta
+      name="description"
+      content="Agaromi is a business that specialize in teaching the handcraft like macrame, crochet and knitting. We have a wide variety of products and classes to offer."
+    />
+
+    <link href="styles/normalization.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/form-media-query.css" />
+    <link rel="stylesheet" href="styles/form-small-query.css" />
+    <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Agaromi Web Page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tombouctou.jpg/640px-Tombouctou.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://poryoculus.github.io/wdd231/Project/index.html"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <img src="images/logo.webp" alt="Logo" />
+        <div class="text-container">
+          <span id="main-title">Agaromi</span>
+          <span id="sub-title">tu casa en mi casa</span>
+        </div>
+        <a id="menu" href="#" aria-label="Open menu" onclick="myFunction()"></a>
+      </div>
+      <div class="navigation">
+        <nav>
+          <a href="index.html">Home </a>
+          <a href="gallery.html">Gallery</a>
+          <a href="form.html">Work with me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Contact me</h1>
+      <h2>Contact me</h2>
+      <form action="thanksyou.html" method="get" class="form-example">
+        <label for="first-name">
+          First Name:
+          <input
+            type="text"
+            id="first-name"
+            name="first_name"
+            required
+            title="Enter your first name"
+            autocomplete="given-name"
+          />
+        </label>
+
+        <label for="last-name">
+          Last Name:
+          <input
+            type="text"
+            id="last-name"
+            name="last_name"
+            required
+            title="Enter your last name"
+            autocomplete="family-name"
+          />
+        </label>
+
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            title="Enter a valid email address"
+            autocomplete="email"
+            placeholder="example@domain.com"
+          />
+        </label>
+
+        <label for="phone">
+          Mobile Phone Number:
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            title="Enter your mobile phone number"
+            autocomplete="tel"
+          />
+        </label>
+
+        <label for="class">
+          Class to participate:
+          <select
+            id="class"
+            name="class"
+            required
+            title="Select a class to participate in"
+          >
+            <option value="" disabled selected>Select a class</option>
+            <option value="macrame">Macrame</option>
+            <option value="resina">Resina</option>
+            <option value="tejido">Tejido</option>
+          </select>
+        </label>
+
+<label for="membership-level">
+  Membership Level:
+  <select
+    id="membership-level"
+    name="membership_level"
+    required
+    title="Select a membership level"
+  >
+    <option value="" disabled selected>
+      Select a membership level
+    </option>
+    <option value="bronze">Bronze Membership</option>
+    <option value="silver">Silver Membership</option>
+    <option value="gold">Gold Membership</option>
+  </select>
+</label>
+        </label>
+        <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+        <button id="join" type="submit">Join</button>
+      </form>
+
+<nav class="membership-levels">
+  <div id="bronze">
+    <h2>Bronze Membership</h2>
+    <p>Perfect for beginners exploring handcrafts.</p>
+    <button type="button">Learn More</button>
+  </div>
+  <div id="silver">
+    <h2>Silver Membership</h2>
+    <p>Ideal for crafters who want to go deeper with access to all videos and more classes.</p>
+    <button type="button">Learn More</button>
+  </div>
+  <div id="gold">
+    <h2>Gold Membership</h2>
+    <p>Unlimited access to classes, exclusive content, and one-on-one support.</p>
+    <button type="button">Learn More</button>
+  </div>
+</nav>
+        <dialog id="membership-info"></dialog>
+    </main>
+    <footer>
+      <div id="address">
+        <h3>Agaromi</h3>
+        <p>Las condes, Santiago</p>
+        <p>(+56) 9 7772 1778</p>
+      </div>
+      <div id="social">
+        <img src="images/youtube.png" alt="Youtube" />
+        <img src="images/twitter_copy.png" alt="Twitter" />
+        <img src="images/linkedin.png" alt="Linkedin" />
+      </div>
+
+      <div id="creation">
+        <p>Creado por Rodrigo Pacheco</p>
+        <p>©<span id="currentYear"></span></p>
+        <p id="lastModification"></p>
+      </div>
+    </footer>
+  </body>
+</html>
